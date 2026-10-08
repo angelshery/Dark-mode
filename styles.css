@@ -1,0 +1,35 @@
+/* Default theme colors */
+:root {
+    --background-color: #ffffff;
+    --text-color: #222222;
+    --button-color: #4a6cf7;
+}
+
+/* Alternate theme colors */
+.dark-mode {
+    --background-color: #222222;
+    --text-color: #ffffff;
+    --button-color: #8b9cff;
+}
+
+/* Use the CSS variables throughout the website */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Button also changes with the selected theme */
+button {
+    background-color: var(--button-color);
+    color: white;
+}
+#theme_toggler{
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  background: #0096c3;
+  padding: 20px;
+  border-radius:30px;
+  color: #fff;
+  cursor: pointer;
+}
