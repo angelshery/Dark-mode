@@ -1,35 +1,55 @@
-/* Default theme colors */
+/* Day theme - default colors */
 :root {
-    --background-color: #ffffff;
+    --background-color: #fdf6e3;
     --text-color: #222222;
-    --button-color: #4a6cf7;
+    --card-color: #ffffff;
+    --button-color: #f4b400;
 }
 
-/* Alternate theme colors */
-.dark-mode {
-    --background-color: #222222;
+/* Night theme - alternate colors */
+.night {
+    --background-color: #10182b;
     --text-color: #ffffff;
-    --button-color: #8b9cff;
+    --card-color: #1d2942;
+    --button-color: #536dfe;
 }
 
-/* Use the CSS variables throughout the website */
+/* Apply the theme colors */
 body {
     background-color: var(--background-color);
     color: var(--text-color);
+    text-align: center;
 }
 
-/* Button also changes with the selected theme */
+/* Style the card */
+.card {
+    background-color: var(--card-color);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    margin: 50px auto;
+}
+
+/* Style the theme image */
+#theme_image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin: 15px auto;
+}
+
+/* Center the image and button */
+.theme-controls {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style the theme button */
 button {
     background-color: var(--button-color);
     color: white;
-}
-#theme_toggler{
-  position: absolute;
-  bottom: 5%;
-  right: 5%;
-  background: #0096c3;
-  padding: 20px;
-  border-radius:30px;
-  color: #fff;
-  cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
